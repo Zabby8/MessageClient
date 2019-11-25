@@ -107,7 +107,7 @@ public class Main{
         System.out.println("Enter name of user:");
         String name = sc.nextLine();
         try{
-            int res = sendCommand("http://localhost:8080/status?userName=" + name);
+            int res = sendCommand("http://localhost:8888/status" + name);
             if(res ==200){
                 System.out.println("User "+name+" is online");
                 return;
